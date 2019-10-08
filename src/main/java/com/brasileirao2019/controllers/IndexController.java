@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.brasileirao2019.models.Clube;
-import com.brasileirao2019.repository.ClubeRepository;
+//import com.brasileirao2019.repository.ClubeRepository;
 
 @Controller
 public class IndexController {
 	
-	@Autowired
-	private ClubeRepository cr;
+	//@Autowired
+	//private ClubeRepository cr;
 	
 	@Autowired
 	private EntityManager em;
 	
-	//APAGAR ESSE COMENTARIO
+	//Troquei esse comentario!!!
 	
 	@RequestMapping("/")
 	public ModelAndView index() {
