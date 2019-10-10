@@ -68,7 +68,7 @@
 			  </thead>
 			  <tbody>
 			    <tr th:each="clube : ${clubes}">
-			      <th scope="row">1 &nbsp;&nbsp;&nbsp;<span th:text="${clube.nomeClube}"></span></th>
+			      <th scope="row"><span th:text="${posicao}"></span> &nbsp;&nbsp;&nbsp;<span th:text="${clube.nomeClube}"></span></th>
 			      <td><span th:text="${clube.pontos}"></span></td>
 			      <td><span th:text="${clube.jogos}"></span></td>
 			      <td><span th:text="${clube.vitorias}"></span></td>

@@ -22,6 +22,17 @@ public class IndexController {
 	@Autowired
 	private EntityManager em;
 		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@RequestMapping("/")
 	public ModelAndView index() {
 		String jpql = "select c from Clube c order by c.pontos desc";
@@ -30,9 +41,16 @@ public class IndexController {
 		/*
 		Collection<Clube> clubes = cr.findAll();
 		*/
+		
 		ModelAndView mv = new ModelAndView("index");
+			for(int i = 1; i <= clubes.size(); i++) {
+				
+			}
+			int posicao = 1;
+			mv.addObject("posicao", posicao);
 		mv.addObject("clubes", clubes);
 		
 		return mv;
 	}
 }
+
