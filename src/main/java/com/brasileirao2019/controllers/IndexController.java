@@ -21,14 +21,7 @@ public class IndexController {
 	
 	@Autowired
 	private EntityManager em;
-	
-	//TESTEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-	//show
-	//TESTEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-	//show
-	//TESTEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-	//show
-	
+		
 	@RequestMapping("/")
 	public ModelAndView index() {
 		String jpql = "select c from Clube c order by c.pontos desc";
