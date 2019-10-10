@@ -26,11 +26,11 @@ public class Clube implements Serializable{
 	@NotEmpty
 	private String jogos;
 	@NotEmpty
-	private String vitoria;
+	private String vitorias;
 	@NotEmpty
-	private String empate;
+	private String empates;
 	@NotEmpty
-	private String derrota;
+	private String derrotas;
 	@NotEmpty
 	private String golsPro;
 	@NotEmpty
@@ -45,20 +45,18 @@ public class Clube implements Serializable{
 	
 	
 	
+	 
 	public long getId() {
 		return id;
 	}
-	
+	public void setId(long id) {
+		this.id = id;
+	}
 	public String getNomeClube() {
 		return nomeClube;
 	}
-
 	public void setNomeClube(String nomeClube) {
 		this.nomeClube = nomeClube;
-	}
-
-	public void setId(long id) {
-		this.id = id;
 	}
 	public String getPontos() {
 		return pontos;
@@ -72,23 +70,23 @@ public class Clube implements Serializable{
 	public void setJogos(String jogos) {
 		this.jogos = jogos;
 	}
-	public String getVitoria() {
-		return vitoria;
+	public String getVitorias() {
+		return vitorias;
 	}
-	public void setVitoria(String vitoria) {
-		this.vitoria = vitoria;
+	public void setVitorias(String vitorias) {
+		this.vitorias = vitorias;
 	}
-	public String getEmpate() {
-		return empate;
+	public String getEmpates() {
+		return empates;
 	}
-	public void setEmpate(String empate) {
-		this.empate = empate;
+	public void setEmpates(String empates) {
+		this.empates = empates;
 	}
-	public String getDerrota() {
-		return derrota;
+	public String getDerrotas() {
+		return derrotas;
 	}
-	public void setDerrota(String derrota) {
-		this.derrota = derrota;
+	public void setDerrotas(String derrotas) {
+		this.derrotas = derrotas;
 	}
 	public String getGolsPro() {
 		return golsPro;
@@ -114,6 +112,13 @@ public class Clube implements Serializable{
 	public void setPorcentagem(String porcentagem) {
 		this.porcentagem = porcentagem;
 	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

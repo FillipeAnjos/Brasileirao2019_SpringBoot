@@ -70,15 +70,15 @@
 			    <tr th:each="clube : ${clubes}">
 			      <th scope="row">1 &nbsp;&nbsp;&nbsp;<span th:text="${clube.nomeClube}"></span></th>
 			      <td><span th:text="${clube.pontos}"></span></td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			      <td>Mark</td>
+			      <td><span th:text="${clube.jogos}"></span></td>
+			      <td><span th:text="${clube.vitorias}"></span></td>
+			      <td><span th:text="${clube.empates}"></span></td>
+			      <td><span th:text="${clube.derrotas}"></span></td>
+			      <td><span th:text="${clube.golsPro}"></span></td>
+			      <td><span th:text="${clube.golsContra}"></span></td>
+			      <td><span th:text="${clube.saldoGol}"></span></td>
+			      <td><span th:text="${clube.porcentagem}"></span></td>
+			      <td><span>0</span></td>
 			    </tr>
 			  </tbody>
 			</table>
