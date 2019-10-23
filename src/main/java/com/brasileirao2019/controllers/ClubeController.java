@@ -24,4 +24,6 @@ public class ClubeController {
 		cr.save(clube);
 		return "clube/clubeCadastro";
 	}
+	
+	
 }

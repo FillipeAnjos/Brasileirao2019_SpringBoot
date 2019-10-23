@@ -21,36 +21,36 @@ public class Clube implements Serializable{
 	
 	@NotEmpty
 	private String nomeClube;	
-	@NotEmpty
-	private String pontos;
-	@NotEmpty
-	private String jogos;
-	@NotEmpty
-	private String vitorias;
-	@NotEmpty
-	private String empates;
-	@NotEmpty
-	private String derrotas;
-	@NotEmpty
-	private String golsPro;
-	@NotEmpty
-	private String golsContra;
-	@NotEmpty
-	private String saldoGol;
-	@NotEmpty
-	private String porcentagem;
+	private Integer pontos;
+	private Integer jogos;
+	private Integer vitorias;
+	private Integer empates;
+	private Integer derrotas;
+	private Integer golsPro;
+	private Integer golsContra;
+	private Integer saldoGol;
+	private Double porcentagem;
+	private Integer posicao;
 	
 	
 	
 	
 	
 	
-	 
+	
+	
+	
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
+	}
+	public Integer getPosicao() {
+		return posicao;
+	}
+	public void setPosicao(Integer posicao) {
+		this.posicao = posicao;
 	}
 	public String getNomeClube() {
 		return nomeClube;
@@ -58,68 +58,60 @@ public class Clube implements Serializable{
 	public void setNomeClube(String nomeClube) {
 		this.nomeClube = nomeClube;
 	}
-	public String getPontos() {
+	public Integer getPontos() {
 		return pontos;
 	}
-	public void setPontos(String pontos) {
+	public void setPontos(Integer pontos) {
 		this.pontos = pontos;
 	}
-	public String getJogos() {
+	public Integer getJogos() {
 		return jogos;
 	}
-	public void setJogos(String jogos) {
+	public void setJogos(Integer jogos) {
 		this.jogos = jogos;
 	}
-	public String getVitorias() {
+	public Integer getVitorias() {
 		return vitorias;
 	}
-	public void setVitorias(String vitorias) {
+	public void setVitorias(Integer vitorias) {
 		this.vitorias = vitorias;
 	}
-	public String getEmpates() {
+	public Integer getEmpates() {
 		return empates;
 	}
-	public void setEmpates(String empates) {
+	public void setEmpates(Integer empates) {
 		this.empates = empates;
 	}
-	public String getDerrotas() {
+	public Integer getDerrotas() {
 		return derrotas;
 	}
-	public void setDerrotas(String derrotas) {
+	public void setDerrotas(Integer derrotas) {
 		this.derrotas = derrotas;
 	}
-	public String getGolsPro() {
+	public Integer getGolsPro() {
 		return golsPro;
 	}
-	public void setGolsPro(String golsPro) {
+	public void setGolsPro(Integer golsPro) {
 		this.golsPro = golsPro;
 	}
-	public String getGolsContra() {
+	public Integer getGolsContra() {
 		return golsContra;
 	}
-	public void setGolsContra(String golsContra) {
+	public void setGolsContra(Integer golsContra) {
 		this.golsContra = golsContra;
 	}
-	public String getSaldoGol() {
+	public Integer getSaldoGol() {
 		return saldoGol;
 	}
-	public void setSaldoGol(String saldoGol) {
+	public void setSaldoGol(Integer saldoGol) {
 		this.saldoGol = saldoGol;
 	}
-	public String getPorcentagem() {
+	public Double getPorcentagem() {
 		return porcentagem;
 	}
-	public void setPorcentagem(String porcentagem) {
+	public void setPorcentagem(Double porcentagem) {
 		this.porcentagem = porcentagem;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 }
