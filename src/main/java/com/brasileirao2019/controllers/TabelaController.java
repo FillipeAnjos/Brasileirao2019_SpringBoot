@@ -5,14 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.brasileirao2019.models.Clube;
-import com.brasileirao2019.repository.ClubeRepository;
+import com.brasileirao2019.models.Tabela;
+import com.brasileirao2019.repository.TabelaRepository;
 
 @Controller
-public class ClubeController {
+public class TabelaController {
 	
 	@Autowired
-	private ClubeRepository cr;
+	private TabelaRepository tr;
 	
 	@RequestMapping("/clubeCadastro")
 	public String clubeCadastro() {
@@ -20,13 +20,9 @@ public class ClubeController {
 	}
 	
 	@RequestMapping(value="saveClube", method=RequestMethod.POST)
-	public String saveClube(Clube clube) {
-		cr.save(clube);
+	public String saveClube(Tabela tabela) {
+		tr.save(tabela);
 		return "clube/clubeCadastro";
 	}
-	
-	//
-	//
-	//
-	//
+
 }
