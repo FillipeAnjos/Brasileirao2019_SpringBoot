@@ -6,112 +6,53 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotEmpty;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Clube implements Serializable{
 
-	private static final long serialVersionUID = 1L;
-
-	//P	J	V	E	D	GP	GC	SG	%	ÚLT. JOGOS
+	private static final long serialVersionUID = 5055890457629616670L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	private String nome;
+	private String descricao;
+	private String campo;
 	
-	@NotEmpty
-	private String nomeClube;	
-	private Integer pontos;
-	private Integer jogos;
-	private Integer vitorias;
-	private Integer empates;
-	private Integer derrotas;
-	private Integer golsPro;
-	private Integer golsContra;
-	private Integer saldoGol;
-	private Double porcentagem;
-	private Integer posicao;
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@OneToOne
+	private Tabela tabela;
+
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public Integer getPosicao() {
-		return posicao;
+	public String getNome() {
+		return nome;
 	}
-	public void setPosicao(Integer posicao) {
-		this.posicao = posicao;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public String getNomeClube() {
-		return nomeClube;
+	public String getDescricao() {
+		return descricao;
 	}
-	public void setNomeClube(String nomeClube) {
-		this.nomeClube = nomeClube;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
-	public Integer getPontos() {
-		return pontos;
+	public String getCampo() {
+		return campo;
 	}
-	public void setPontos(Integer pontos) {
-		this.pontos = pontos;
+	public void setCampo(String campo) {
+		this.campo = campo;
 	}
-	public Integer getJogos() {
-		return jogos;
+	public Tabela getTabela() {
+		return tabela;
 	}
-	public void setJogos(Integer jogos) {
-		this.jogos = jogos;
+	public void setTabela(Tabela tabela) {
+		this.tabela = tabela;
 	}
-	public Integer getVitorias() {
-		return vitorias;
-	}
-	public void setVitorias(Integer vitorias) {
-		this.vitorias = vitorias;
-	}
-	public Integer getEmpates() {
-		return empates;
-	}
-	public void setEmpates(Integer empates) {
-		this.empates = empates;
-	}
-	public Integer getDerrotas() {
-		return derrotas;
-	}
-	public void setDerrotas(Integer derrotas) {
-		this.derrotas = derrotas;
-	}
-	public Integer getGolsPro() {
-		return golsPro;
-	}
-	public void setGolsPro(Integer golsPro) {
-		this.golsPro = golsPro;
-	}
-	public Integer getGolsContra() {
-		return golsContra;
-	}
-	public void setGolsContra(Integer golsContra) {
-		this.golsContra = golsContra;
-	}
-	public Integer getSaldoGol() {
-		return saldoGol;
-	}
-	public void setSaldoGol(Integer saldoGol) {
-		this.saldoGol = saldoGol;
-	}
-	public Double getPorcentagem() {
-		return porcentagem;
-	}
-	public void setPorcentagem(Double porcentagem) {
-		this.porcentagem = porcentagem;
-	}
-
-
+	
+	
 }

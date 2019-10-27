@@ -67,17 +67,17 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			    <tr th:each="clube : ${clubes}">
-			      <th scope="row"><span th:text="${clube.posicao}"></span> &nbsp;&nbsp;&nbsp;<span th:text="${clube.nomeClube}"></span></th>
-			      <td><span th:text="${clube.pontos}"></span></td>
-			      <td><span th:text="${clube.jogos}"></span></td>
-			      <td><span th:text="${clube.vitorias}"></span></td>
-			      <td><span th:text="${clube.empates}"></span></td>
-			      <td><span th:text="${clube.derrotas}"></span></td>
-			      <td><span th:text="${clube.golsPro}"></span></td>
-			      <td><span th:text="${clube.golsContra}"></span></td>
-			      <td><span th:text="${clube.saldoGol}"></span></td>
-			      <td><span th:text="${clube.porcentagem}"></span></td>
+			    <tr th:each="tabela : ${tabelas}">
+			      <th scope="row"><span th:text="${tabela.posicao}"></span> &nbsp;&nbsp;&nbsp;<span th:text="${tabela.nomeClube}"></span></th>
+			      <td><span th:text="${tabela.pontos}"></span></td>
+			      <td><span th:text="${tabela.jogos}"></span></td>
+			      <td><span th:text="${tabela.vitorias}"></span></td>
+			      <td><span th:text="${tabela.empates}"></span></td>
+			      <td><span th:text="${tabela.derrotas}"></span></td>
+			      <td><span th:text="${tabela.golsPro}"></span></td>
+			      <td><span th:text="${tabela.golsContra}"></span></td>
+			      <td><span th:text="${tabela.saldoGol}"></span></td>
+			      <td><span th:text="${tabela.porcentagem}"></span></td>
 			      <td><span>0</span></td>
 			    </tr>
 			  </tbody>
