@@ -18,25 +18,10 @@ import com.brasileirao2019.repository.TabelaRepository;
 public class IndexController {
 	
 	@Autowired
-	private TabelaRepository tr;
-	
-	@Autowired
 	private EntityManager em;
 		
 	
-	
-	
-	
-	
-	
-	
-	
-	public void buscarPosicao(Collection<Tabela> tabelas){
-		int index = 1;
-		for (Tabela tabela : tabelas) {
-			tr.updateTabelaPosicao(index++, tabela.getId());
-		}
-	}
+
 	
 	@RequestMapping("/")
 	public ModelAndView index() {
@@ -44,8 +29,6 @@ public class IndexController {
 		TypedQuery<Tabela> tq = em.createQuery(jpql, Tabela.class);
 		Collection<Tabela> tabelas = tq.getResultList();
 				
-		buscarPosicao(tabelas);
-
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("tabelas", tabelas);
 		
